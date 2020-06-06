@@ -7,7 +7,7 @@
             <div class="nav">
                <img 
                 :src="menuIcon"
-                @click="showSidepanel = !showSidepanel"
+                @click="clickMe()"
                  alt=""/>
             </div>
 
@@ -22,17 +22,21 @@
 </template>
 
 
-<script>
-    import Logo from '../../assets/images/logo.png';
-    import Menu from '../../assets/images/menu.png';
+<script lang="ts">
+    import *  as Logo from '../../assets/images/logo.png';
+    import * as Menu from '../../assets/images/menu.png';
+    import { Component, Vue } from 'vue-property-decorator';
 
-    export default {
-        data(){
-            return {
-                logoIcon: Logo,
-                menuIcon: Menu,
-                showSidepanel: false
-            }
+    @Component
+    export default class Header extends Vue {
+        private logoIcon:string = Logo;
+        private menuIcon:string = Menu;
+        private showSidepanel:boolean = false;
+
+        public clickMe(): void {
+            this.showSidepanel = !this.showSidepanel;
+            console.log("sssss");
         }
+
     }
 </script>

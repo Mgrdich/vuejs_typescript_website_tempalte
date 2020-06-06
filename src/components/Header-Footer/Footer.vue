@@ -12,15 +12,13 @@
     </footer>
 </template>
 
-<script>
-    import Logo from '../../assets/images/logo.png';
+<script lang="ts">
+    import * as Logo from '../../assets/images/logo.png';
+    import {Component, Vue} from "vue-property-decorator";
 
-    export default {
-        data(){
-            return {
-                logoIcon: Logo 
-            }
-        }
+    @Component
+    export default class Footer extends Vue {
+        private logoIcon:string = Logo;
     }
 
 </script>
