@@ -16,5 +16,5 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-  @import url();
+  @import './assets/style.css';
 </style>
