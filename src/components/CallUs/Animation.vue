@@ -15,6 +15,7 @@
 <script lang="ts">
     import {Component, Vue} from "vue-property-decorator";
 
+    console.log(Velocity);
     @Component
     export default class Animation extends Vue {
          public beforeEnter(el:HTMLBodyElement):void {
@@ -23,8 +24,11 @@
          }
 
         public enter(el: HTMLBodyElement, done: boolean): void {
-            let attrDelay:string =  el.getAttribute('delay')?el.getAttribute('delay'):'';
-            let delay = parseInt()
+            let attrDelay:string =  el.getAttribute('delay')?el.getAttribute('delay')+'':''; //Typescript complie error
+            let attrLeft:string =  el.getAttribute('left')?el.getAttribute('left')+'':''; //Typescript complie error
+            let delay:number = parseInt(attrDelay);
+            let left:number = parseInt(attrLeft);
+
         }
     }
 </script>

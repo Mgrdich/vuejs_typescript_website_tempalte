@@ -1,0 +1,1 @@
+declare function Velocity(obj:any): any;

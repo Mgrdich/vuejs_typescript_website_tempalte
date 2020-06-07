@@ -3,6 +3,7 @@ import App from './App.vue';
 import {MdButton,MdDrawer,MdCard} from 'vue-material/dist/components';
 import VueResource from 'vue-resource';
 import VueScrollReveal from 'vue-scroll-reveal';
+import 'velocity-animate';
 import 'vue-material/dist/vue-material.min.css';
 import 'vue-material/dist/theme/default.css';
 
