@@ -4,8 +4,10 @@
             <div class="first" v-scroll-reveal="{delay:200,scale:2}">
                 <h1>Hungry ?</h1>
             </div>
-            <div class="second">
-
+            <div class="second"  v-scroll-reveal="{delay:400,afterReveal:toggleAnim}">
+                <div v-if="secondAnim">
+                    <comp-animation></comp-animation>
+                </div>
             </div>
             <div class="third" v-scroll-reveal="{delay:600,scale:2}">
                 <span>Give us a call</span> <span>6666-3399</span>
@@ -24,6 +26,9 @@
         }
     })
     export default class CallUs extends Vue{
-
+        private secondAnim:boolean = false;
+        public toggleAnim() {
+            this.secondAnim = true;
+        }
     }
 </script>

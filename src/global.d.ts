@@ -1,1 +1,1 @@
-declare function Velocity(obj:any): any;
+declare function Velocity(el:HTMLBodyElement,styleConfig:any,animationConfig:any): any;
