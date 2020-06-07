@@ -14,7 +14,8 @@
     "vue-class-component": "^7.2.3",
     "vue-material": "^1.0.0-beta-14",
     "vue-property-decorator": "^8.4.2",
-    "vue-resource": "^1.5.1"
+    "vue-resource": "^1.5.1",
+    "vue-scroll-reveal": "^1.0.11"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",
