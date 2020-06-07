@@ -4,6 +4,7 @@
     <div>
       <comp-featured></comp-featured>
       <comp-menu></comp-menu>
+      <com-call-us></com-call-us>
     </div>
     <comp-footer></comp-footer>
   </div>
@@ -15,13 +16,15 @@ import Footer from "@/components/Header-Footer/Footer.vue";
 import Header from "@/components/Header-Footer/Header.vue";
 import Featured from "@/components/Featured/Featured.vue";
 import Menu from "@/components/Menu/Menu.vue";
+import CallUs from "@/components/CallUs/CallUs.vue";
 
 @Component({
   components: {
     'comp-footer': Footer,
     'comp-header': Header,
     'comp-featured': Featured,
-    'comp-menu': Menu
+    'comp-menu': Menu,
+    'com-call-us': CallUs
   },
 })
 export default class App extends Vue {}
