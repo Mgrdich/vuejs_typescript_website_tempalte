@@ -4,7 +4,8 @@
     <div>
       <comp-featured></comp-featured>
       <comp-menu></comp-menu>
-      <com-call-us></com-call-us>
+      <comp-call-us></comp-call-us>
+      <comp-newsletter></comp-newsletter>
     </div>
     <comp-footer></comp-footer>
   </div>
@@ -17,6 +18,7 @@ import Header from "@/components/Header-Footer/Header.vue";
 import Featured from "@/components/Featured/Featured.vue";
 import Menu from "@/components/Menu/Menu.vue";
 import CallUs from "@/components/CallUs/CallUs.vue";
+import Newsletter from "@/components/Newsletter/Newsletter.vue";
 
 @Component({
   components: {
@@ -24,7 +26,8 @@ import CallUs from "@/components/CallUs/CallUs.vue";
     'comp-header': Header,
     'comp-featured': Featured,
     'comp-menu': Menu,
-    'com-call-us': CallUs
+    'comp-call-us': CallUs,
+    'comp-newsletter':Newsletter
   },
 })
 export default class App extends Vue {}
