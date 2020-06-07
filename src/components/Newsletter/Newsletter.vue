@@ -65,7 +65,7 @@
                 .then( response => {
                     if(Object.getOwnPropertyNames(response.data).length === 0){
                         this.$http.post('users.json',{email: this.email})
-                            .then( response => {
+                            .then( () => {
                                 this.success = 'Thank you'
                             });
                     } else {
